@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Docker Demo Website</title>
+    </head>
+    <style>
+        html{
+            background-color: white;
+        }
+        h1 {
+            font-size: 4em;
+            font-family: Segoe UI Light,Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+            color: darkslateblue;
+            padding-top: 250px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+        div {
+            width: 400px;
+            height: 350px;
+            background: url('https://raw.githubusercontent.com/andbron/DockerDemo/master/ninja.cat.gif') left bottom no-repeat;
+            position: absolute;
+            -webkit-animation: mymove 20s infinite; /* Chrome, Safari, Opera */
+            animation: mymove 20s infinite;
+        }
+
+        /* Chrome, Safari, Opera */
+        #div1 {-webkit-animation-timing-function: linear;}
+        
+
+        /* Standard syntax */
+        #div1 {animation-timing-function: linear;}
+        
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes mymove {
+            from {left: -200px;}
+            to {left: 1000px;}
+        }
+
+        /* Standard syntax */
+        @keyframes mymove {
+            from {left: -200px;}
+            to {transition: ease-out; left: 1100px;}
+        }
+    </style>    
+    <body>
+    <p><h1><center> You have deployed a website in a container!</center></h1><p>
+
+    <div id="div1"></div>
+
+    </body>
+</html>            
