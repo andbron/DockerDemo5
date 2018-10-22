@@ -2,10 +2,12 @@
     <head>
         <title>Docker Demo Website</title>
     </head>
+	
     <style>
         html{
             background-color: white;
         }
+
         h1 {
             font-size: 4em;
             font-family: Segoe UI Light,Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
@@ -15,22 +17,12 @@
             padding-bottom: 50px;
             padding-left: 80px;
         }
-        div {
-            width: 400px;
-            height: 350px;
-            background: url('https://raw.githubusercontent.com/andbron/DockerDemo/master/ninja.cat.gif') left bottom no-repeat;
-            position: absolute;
-            -webkit-animation: mymove 20s infinite; /* Chrome, Safari, Opera */
-            animation: mymove 20s infinite;
-        }
 
         /* Chrome, Safari, Opera */
         #div1 {-webkit-animation-timing-function: linear;}
-        
 
         /* Standard syntax */
         #div1 {animation-timing-function: linear;}
-        
 
         /* Chrome, Safari, Opera */
         @-webkit-keyframes mymove {
@@ -43,11 +35,15 @@
             from {left: -200px;}
             to {transition: ease-out; left: 1100px;}
         }
-    </style>    
+
+	.centerImage {text-align: center;}
+
+    </style>  	
+	
     <body>
-    <p><h1><center> You have deployed a website in a container!</center></h1><p>
-
-    <div id="div1"></div>
-
+        <p><h1><center> You have deployed a website in a container!</center></h1><p>
+		<div class="centerImage"><img src="https://raw.githubusercontent.com/andbron/DockerDemo5/master/xwindows.gif"></div>		
     </body>
+	
 </html>            
+         
